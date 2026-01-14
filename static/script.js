@@ -23,18 +23,50 @@ mudaLetra();
 // ____________________________________________________________
 
 /* Função para abrir e fechar o aside */
-
+// Elementos principais
 const menuMobile = document.querySelector('.menu-mobile');
-const body = document.querySelector('body');
+const body = document.body;
+const aside = document.getElementById('menu-responsive');
+const asideLinks = document.querySelectorAll('#menu-responsive a');
 
-menuMobile.addEventListener('click', () => {
-    menuMobile.classList.contains("bi-list")    
-        ? menuMobile.classList.replace("bi-list", "bi-x")
-        : menuMobile.classList.replace("bi-x", "bi-list");
+// Função única para abrir / fechar o menu
+function toggleMenu() {
+  const isOpening = !body.classList.contains('menu-responsive-active');
 
-    body.classList.toggle("menu-responsive-active")
-        
-}); 
+  // Alterna ícone
+  menuMobile.classList.toggle('bi-list');
+  menuMobile.classList.toggle('bi-x');
+
+  // Abre / fecha menu
+  body.classList.toggle('menu-responsive-active');
+
+  if (isOpening) {
+    // Reset antes de animar
+    aside.classList.remove('animate-links');
+
+    // Aguarda o aside entrar para animar os links
+    setTimeout(() => {
+      aside.classList.add('animate-links');
+    }, 400); // mesmo tempo do transition do aside
+  } else {
+    // Ao fechar, reseta animação
+    aside.classList.remove('animate-links');
+  }
+}
+
+// Clique no ícone do menu
+menuMobile.addEventListener('click', toggleMenu);
+
+// Clique em qualquer link do aside
+asideLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Só fecha se o menu estiver aberto
+    if (body.classList.contains('menu-responsive-active')) {
+      toggleMenu();
+    }
+  });
+});
+
 
 
 // ____________________________________________________________
@@ -81,3 +113,4 @@ form.addEventListener("submit", (event) => {
 
 
 
+// ____________________________________________________________

@@ -25,7 +25,7 @@
      <div class="row">        
         <div class="col-md-10">
             <!-- <img class="imagem-responsive" id="imagem-responsive" src="{{ url_for('static', filename='images/amiraldo_logo_transparent_white.png') }}" alt="Ícone do Site">    -->
-            <img class="imagem-responsive" id="imagem-responsive" src="../static/images/amiraldo_logo_transparent_white.png" alt="Ícone do Site">   
+            <a href="#home-section"><img class="imagem-responsive" id="imagem-responsive" src="../static/images/amiraldo_logo_transparent_white.png" alt="Ícone do Site">   </a>
         </div>
 
         <div class="col-md-2">
@@ -51,7 +51,7 @@
                         <a class="nav-link-flex" href="#resume-section">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-flex" href="#service-section">Services</a>
+                        <a class="nav-link-flex" href="#services-section">Services</a>
                     </li> 
                     <li class="nav-item">
                         <a class="nav-link-flex last-link" id="hireme" href="#contact-section">Hire me</a> 
@@ -85,7 +85,7 @@
                             <a class="nav-link-aside" href="#resume-section">Resume</a>
                         </li>  
                         <li class="nav-item mt-3">
-                            <a class="nav-link-aside" href="#service-section">Services</a>
+                            <a class="nav-link-aside" href="#services-section">Services</a>
                         </li> 
                         <li class="nav-item mt-3">
                             <a class="nav-link-aside" id="hireme" href="#contact-section">Hire me</a>
@@ -99,7 +99,7 @@
     
     <main id="main">
 
-        <section id="home-section" class="row p-0">            
+        <section id="home-section" class="row p-0 mb-5">            
             <div class="row conteiner">                           
                 <div class="col-lg-6" data-anime="up">
                     <h2 class="tag">Software Developer</h2>
@@ -144,62 +144,204 @@
         <!--home-section-->
         
 
-
-        <section id="compabilities-section" class="compabilities-section">
-            <h1 class="text-shadow">COMP<span>ABILITIES</span></h1>
-            <span id="subtitle2" class="text-shadow text-white">Alguma coisa como subtitulo</span>
+        <!--resume-section-->
+        <section id="resume-section" class="resume-section mt-5">
+            <h1 class="text-shadow">RE<span>SUM</span>E</h1>            
+            <div data-anime="right" >                
+                <p>
+                    I am a multidisciplinary professional with experience in entomology and software development. 
+                    I worked as an Endemic Disease Agent from 2003 to 2013 and Entomological Laboratory Technician 
+                    from 2013 to 2016, monitoring mosquito populations and collaborating on public health campaigns. 
+                    In 2016, I migrated to Portugal. In 2020, I transitioned into software development, where 
+                    I developed a tool using Python, Kivy, and MariaDB, assists in the manipulation, storage, 
+                    and generation of data for entomological research analysis, streamlining data collection 
+                    and analysis processes for professionals in the field. I also completed a full-stack developer 
+                    internship, building a system with WordPress, PHP, and MariaDB for IEFP. The system allows 
+                    the registration of equipment faults, manages repairs, and sends automated email 
+                    notifications, improving the efficiency of technical processes within the institution.
+                    I am passionate about combining my expertise in science and technology to create impactful 
+                    solutions.
+                </p>
+                <p>
+                    I believe that technology is a powerful tool to transform businesses of any size and industry, 
+                    and I’m here to help small businesses and entrepreneurs reach their full potential. 
+                    With a creative and solution-driven approach, I help turn ideas into reality, 
+                    from developing custom websites and apps to creating impactful digital experiences. 
+                    My goal is always to deliver practical results, combining innovation and cutting-edge 
+                    technology to drive success in an increasingly competitive market. 
+                    Let’s embark on this journey toward digital excellence together!
+                </p>
+                <p>
+                    In my work, I leverage a diverse set of technologies to bring projects 
+                    to life. I use Python for its versatility and efficiency in backend 
+                    development, along with Kivy and KivyMD to create intuitive, 
+                    cross-platform mobile and desktop applications. For web development, 
+                    I rely on HTML, CSS, and JavaScript to build dynamic and responsive user 
+                    interfaces, using frameworks like Bootstrap to ensure that every design is 
+                    mobile-friendly and visually appealing. My goal is to combine these 
+                    technologies to create seamless digital solutions that meet the unique 
+                    needs of each project.
+                </p> 
+            </div>             
         </section>
+        <!--resume-section-->
 
-        <section id="conteudo2" class="row m-4 d-flex justify-content-center align-content-center">
-            <div data-animation="up" >
-                <h2>Compabilities</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
-                    Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
-                    cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
-                    consectetur adipisicing elit. Recusandae corporis, itaque harum 
-                    sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
-                    officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
-                    facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
-                    reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
-                    praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
-                    Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
-                    cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
-                    consectetur adipisicing elit. Recusandae corporis, itaque harum 
-                    sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
-                    officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
-                    facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
-                    reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
-                    praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
+         <!--timeline-section-->
+        <section class="timeline" id="timeline">
+
+            <h2>Time <span>Line</span></h2>
+            <div class="timeline-items">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">December/2025 - January/2026</div>
+                    <div class="time-line-content">
+                        <h4>WEBSITE - PERSONAL PORTFOLIO</h4>
+                        <p>
+                            I developed a portfolio website using HTML, CSS, JavaScript, Bootstrap3 and Flask. 
+                            The portfolio includes a home page with links to my main social media 
+                            profiles and a button to download my curriculum. The resume page provides a 
+                            brief overview of my professional journey and features a timeline of key moments. 
+                            The portfolio section showcases some of my projects, including websites and apps, 
+                            while the contact page offers an automated email form for future project inquiries.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">September/2025 - In progress</div>
+                    <div class="time-line-content">
+                        <h4>Licenciature Software Engineering</h4>
+                        <p>
+                            Focused on software development and problem-solving.
+                            Strong foundation in programming, algorithms, and computer systems.
+                            Experienced in building scalable and efficient applications.
+                            Passionate about technology, innovation, and continuous learning.
+                            Motivated to apply engineering principles to real-world solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">September/2024 - In progress</div>
+                    <div class="time-line-content">
+                        <h4>Idealizing DreamWalker Plane Website</h4>
+                        <p>
+                            O site DreamWalker Plane combina um frontend estático com HTML, CSS e 
+                            JavaScript com um backend em Python/Flask. A aplicação Flask é 
+                            hospedada como um Web Service no Render.com, que cuida do deploy 
+                            contínuo e da entrega da aplicação via WSGI (ex.: Gunicorn). Essa 
+                            arquitetura permite um backend leve em Python servindo conteúdo dinâmico e 
+                            estático de forma eficiente e escalável.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">April/2023 - May/2023</div>
+                    <div class="time-line-content">
+                        <h4>IEFP INTERNSHIP - FAULT REGISTRATION SYSTEM DEVELOPMENT</h4>
+                        <p>
+                            I completed a 210-hour internship at the IEFP in Portimão, where I developed a fault 
+                            registration and management system for room devices. I worked as a full-stack developer, 
+                            using WordPress, PHP, HTML, CSS, and MariaDB. The system manages repairs and sends email 
+                            notifications. My activities included requirements gathering, frontend and backend 
+                            development, database integration, and testing. This project enhanced my technical 
+                            and project management skills.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">April/2016 - May/2016</div>
+                    <div class="time-line-content">
+                        <h4>IEFP- FINAL COURSE PROJECT</h4>
+                        <p>
+                            It is an app developed with Python, MariaDB, and Kivy that helps entomological technicians
+                            handle, store, and generate data for analysis related to entomological research. 
+                            It also serves as an indicator for actions against vector reproduction and disease 
+                            transmission, generating key indices to measure egg positivity and density, as well as 
+                            adult females. The tool produces IDO and IPO based on the division of areas covered 
+                            by oviposition traps.
+                        </p>
+                    </div>                    
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">November/2021 - May/2023</div>
+                    <div class="time-line-content">
+                        <h4>IEFP- COMPUTER PROGRAMMER COURSE</h4>
+                        <p>
+                            The Computer Programmer analyzes systems, manages databases, develops applications,                                
+                            and handles the installation and maintenance of office software, utilities, 
+                            and management applications. They ensure optimal system performance while adhering 
+                            to workplace safety, hygiene, health standards, and environmental protection regulations.
+                        </p>
+                    </div>                    
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">May/2013 - May/2016</div>
+                    <div class="time-line-content">
+                        <h4>ENTOMOLOGICAL LABORATORY TECHNICIAN</h4>
+                        <p>
+                            I worked as an Entomological Laboratory Technician, monitoring and controlling mosquito 
+                            populations that transmit diseases like dengue, Zika, and chikungunya. 
+                            My activities included installing ovitraps, identifying species, recording 
+                            entomological data, and collaborating with epidemiological surveillance programs. 
+                            I was also responsible for maintaining and calibrating laboratory equipment to 
+                            ensure the quality of the analyses.
+                        </p>
+                    </div>                    
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">August/2003 - May/2013</div>
+                    <div class="time-line-content">
+                        <h4>ENDEMIC DISEASE AGENT</h4>
+                        <p>
+                            As an Endemics Disease Agent, I worked on controlling vector-borne diseases 
+                            such as dengue, Zika, and chikungunya. I visited homes and public places 
+                            to eliminate mosquito breeding sites, treated areas with potential breeding 
+                            grounds, and educated the public on prevention. I also applied larvicides and 
+                            insecticides, collaborated on public health campaigns, and collected data for 
+                            epidemiological surveillance in the municipality.
+                    </div>                    
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">January/1994 - December/1999</div>
+                    <div class="time-line-content">
+                        <h4>12º- HIGH SCHOOL</h4>
+                        <p>
+                            I studied from 5th to 12th grade at Colégio Encanto, where I developed academic 
+                            and social skills. I participated in various extracurricular activities, 
+                            such as science fairs and cultural events, which enhanced my teamwork abilities. 
+                            The educational environment was stimulating, and the dedicated teachers 
+                            contributed to my development. This period prepared me well for future challenges.
+                    </div>                    
+                </div>
             </div>
-            <div data-animation="left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
-                    Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
-                    cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
-                    consectetur adipisicing elit. Recusandae corporis, itaque harum 
-                    sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
-                    officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
-                    facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
-                    reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
-                    praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
-            </div>
-        </section><!--conteudo2-->
+        </section>
+        <!--timeline-section-->
 
-
-        <section id="clients-section" class="clients-section">
-            <h1 class="text-shadow">CLI<span>ENTS</span></h1>
+        <!--services-section-->
+        <section id="services-section" class="services-section">
+            <h1 class="text-shadow">SERV<span>ICES</span></h1>
             <span id="subtitle3" class="text-shadow text-white">Alguma coisa como subtitulo</span>
         </section>
 
         <section id="conteudo3" class="row m-4 d-flex justify-content-center align-content-center">
             <div data-animation="down">
-                <h2>Clients</h2>
+                <h2>How my skill can help you</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
                     Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
@@ -211,32 +353,11 @@
                     Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
                     reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
                     praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
-            </div>
-            <p data-animation="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
-                Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
-                cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. Recusandae corporis, itaque harum 
-                sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
-                officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
-                facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
-                reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
-                praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
-            <p data-animation="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
-                Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
-                cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. Recusandae corporis, itaque harum 
-                sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
-                officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
-                facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
-                reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
-                praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
-        </section><!--conteudo3-->
+            </div>            
+        </section>
+        <!--services-section-->
 
-
+        <!--contact-section-->
         <section id="contact-section" class="row pt-5 pb-5 m-4 contact">
             <div class="container mb-5">
                 <h2>Contact</h2>
@@ -286,6 +407,7 @@
             
 
         </section>
+        <!--contact-section-->  
 
     </main>
     <!--main-->
