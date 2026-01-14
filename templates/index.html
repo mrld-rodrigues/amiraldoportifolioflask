@@ -1,21 +1,300 @@
-<!-- DreamWalker Plane Project - Inicio -->
+<!-- Portifólio Amiraldo Flask - Inicio -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}">    
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='#') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}">   -->
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">  
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/amiraldo_logo_transparent_white.png') }}"> -->
+    <link rel="icon" type="image/png" href="../static/images/amiraldo_logo_transparent_white.png">
+
     <title>Amiraldo Portifólio</title>
 </head>
 <body>
 
-        Vai começar aqui!
+
+    <!-- Logo e Ícone Menu Mobile -->
+     <div class="row">        
+        <div class="col-md-10">
+            <!-- <img class="imagem-responsive" id="imagem-responsive" src="{{ url_for('static', filename='images/amiraldo_logo_transparent_white.png') }}" alt="Ícone do Site">    -->
+            <img class="imagem-responsive" id="imagem-responsive" src="../static/images/amiraldo_logo_transparent_white.png" alt="Ícone do Site">   
+        </div>
+
+        <div class="col-md-2">
+            <i class="bi bi-list menu-mobile"></i>       
+        </div>
+        
+    </div>
+   
+
+    <!-- Cabeçalho / Navbar -->
+    <header>
+        <div class="header">                
+
+            <!-- <a href="#"><img class="imagem" id="imagem" src="{{ url_for('static', filename='images/amiraldo_logo_transparent_white.png') }}" alt="Ícone do Site"></a> -->
+            <a href="#"><img class="imagem" id="imagem" src="../static/images/amiraldo_logo_transparent_white.png" alt="Ícone do Site"></a>
+            <p id="name">Amiraldo <span id="name-header">Rodrigues</span></p>
+            <nav class="nav-list nav-flex-column" id="navbar-header">
+                <ul class="nav nav-flex-column custom-nav-color" id="my-nav">   
+                    <li class="nav-item">
+                        <a class="nav-link-flex" href="#home-section">Home</a> 
+                      </li>                     
+                    <li class="nav-item">
+                        <a class="nav-link-flex" href="#resume-section">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-flex" href="#service-section">Services</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link-flex last-link" id="hireme" href="#contact-section">Hire me</a> 
+                    </li>
+                </ul>                   
+            </nav> 
+        </div>
+    </header>
+
+
+    <aside id="menu-responsive">
+        <section class="profile">
+            <div id="bar">
+                <!-- <img src="{{ url_for('static', filename='images/amiraldo_logo_transparent_white.png') }}" alt="amiraldologo">  -->
+                <img src="../static/images/amiraldo_logo_transparent_white.png" alt="amiraldologo"> 
+                <h1 class="mt-3" id="animated-text">Amiraldo<span id="ponto">.</span></h1> 
+                <div class="social-links mt-4 text-center">
+                    <a href="https://github.com/mrld-rodrigues" target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amiraldo-rodrigues" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>                
+                </div>
+                <nav id="navbar" class="nav-menu">
+                    <ul class="nav flex-column text-center mt-4">
+                        <li class="nav-item mt-3">
+                            <a class="nav-link-aside" href="#home-section">Home</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <a class="nav-link-aside" href="#resume-section">Resume</a>
+                        </li>  
+                        <li class="nav-item mt-3">
+                            <a class="nav-link-aside" href="#service-section">Services</a>
+                        </li> 
+                        <li class="nav-item mt-3">
+                            <a class="nav-link-aside" id="hireme" href="#contact-section">Hire me</a>
+                        </li>               
+                    </ul>
+                </nav>                
+            </div>
+        </section>
+    </aside>
+
+    
+    <main id="main">
+
+        <section id="home-section" class="row p-0">            
+            <div class="row conteiner">                           
+                <div class="col-lg-6" data-anime="up">
+                    <h2 class="tag">Software Developer</h2>
+                    <h1 id="hi"><span>Hi,</span> everyone!<br></h1>
+                    <h1 id="ami">I'm Amiraldo Rorigues</h1>    
+                    <p id="text">
+                        I'm passionate about programming, where I see each project as an opportunity to express creativity. To me, developing software is an art, combining logic with innovation to create impactful solutions.
+                    </p>                 
+                </div>             
+                <div class="col-lg-6 cube" data-anime="down">
+                    <div id='cube-container'>
+                        <div class="face top"></div>
+                        <div class="face right"></div>  
+                        <div class="face bottom"></div>
+                        <div class="face left"></div>
+                        <div class="face back"></div>
+                        <div class="face front"></div>
+                    </div>
+                </div>                          
+                <div id="link-social-media" class="row p-0">
+                    <div id="download-cv" class="col-sm-4 download-cv" data-anime="left">
+                        <!-- <a href="{{ url_for('static', filename='downloads/cv_amiraldo_rodrigues.pdf') }}" target="_blank" class="link" type="submit"> -->
+                        <a href="../static/downloads/cv_amiraldo_rodrigues.pdf" target="_blank" class="link" type="submit">
+                            <span id="dcv" class="link__text">
+                                Download CV
+                            </span>
+                        </a> 
+                    </div>
+                    <div id="links-job" class="col-md-8" data-anime="right">
+                        <ul class="nav">                            
+                            <li class="nav-item">
+                                <a id="git" href="https://github.com/mrld-rodrigues" target="_blank"><i class="bi bi-github"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="linkded" href="https://www.linkedin.com/in/amiraldo-rodrigues" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </li>                    
+                        </ul>                    
+                    </div>                                  
+                </div>
+            </div>            
+        </section> 
+        <!--home-section-->
+        
+
+
+        <section id="compabilities-section" class="compabilities-section">
+            <h1 class="text-shadow">COMP<span>ABILITIES</span></h1>
+            <span id="subtitle2" class="text-shadow text-white">Alguma coisa como subtitulo</span>
+        </section>
+
+        <section id="conteudo2" class="row m-4 d-flex justify-content-center align-content-center">
+            <div data-animation="up" >
+                <h2>Compabilities</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
+                    Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
+                    cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Recusandae corporis, itaque harum 
+                    sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
+                    officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
+                    facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
+                    reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
+                    praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
+                    Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
+                    cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Recusandae corporis, itaque harum 
+                    sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
+                    officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
+                    facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
+                    reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
+                    praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
+            </div>
+            <div data-animation="left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
+                    Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
+                    cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Recusandae corporis, itaque harum 
+                    sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
+                    officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
+                    facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
+                    reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
+                    praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
+            </div>
+        </section><!--conteudo2-->
+
+
+        <section id="clients-section" class="clients-section">
+            <h1 class="text-shadow">CLI<span>ENTS</span></h1>
+            <span id="subtitle3" class="text-shadow text-white">Alguma coisa como subtitulo</span>
+        </section>
+
+        <section id="conteudo3" class="row m-4 d-flex justify-content-center align-content-center">
+            <div data-animation="down">
+                <h2>Clients</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
+                    Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
+                    cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Recusandae corporis, itaque harum 
+                    sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
+                    officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
+                    facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
+                    reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
+                    praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
+            </div>
+            <p data-animation="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
+                Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
+                cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Recusandae corporis, itaque harum 
+                sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
+                officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
+                facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
+                reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
+                praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
+            <p data-animation="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
+                Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
+                cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Recusandae corporis, itaque harum 
+                sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
+                officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
+                facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
+                reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
+                praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
+        </section><!--conteudo3-->
+
+
+        <section id="contact-section" class="row pt-5 pb-5 m-4 contact">
+            <div class="container mb-5">
+                <h2>Contact</h2>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="card p-5 shadow border-0" data-animation="left">
+                            <div class="endereco">
+                                <h4><i class="bi bi-geo-alt"></i> Local:</h4>
+                                <p>Toronto, CA</p>
+                            </div>
+
+                            <div class="email">
+                                <h4><i class="bi bi-envelope"></i> Email:</h4>
+                                <p>teuemail@gmail.com</p>
+                            </div>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94982.18775546656!2d-79.44285165818535!3d43.71689493951833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2zVG9yb250bywgT04sIENhbmFkw6E!5e0!3m2!1spt-PT!2spt!4v1714148500569!5m2!1spt-PT!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-7 mt-5 mt-md-0">
+                        <div class="card p-5 h-100 shadow border-0" data-animation="up">
+
+                            <form class="row g-3" action="/send" method="POST">
+                                <div class="col-md-6">
+                                  <label for="name" class="form-label"> Nome:</label>
+                                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="email" class="form-label"> Email:</label>
+                                  <input type="email" class="form-control" id="email" name="email" placeholder="Your email">
+                                </div>
+                                
+                                <div class="col-12">
+                                  <label for="message" class="form-label"> Messages:</label>
+                                  <textarea type="text" class="form-control" id="message" rows="8" placeholder="Enter your message" name="message"></textarea>
+                                </div>
+
+                              
+                                <div class="col-12 d-flex justify-content-center mt-4">
+                                  <button type="submit" class="btn btn-outline-warning">Send message</button>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+
+    </main>
+    <!--main-->
+
+
+
+    <!-- Scripts JS -->
+    <script defer src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../static/script.js"></script>
 
 </body>
 </html>

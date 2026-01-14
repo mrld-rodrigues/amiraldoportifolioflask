@@ -22,6 +22,22 @@ app.secret_key = secret_key
 def index():    
     return render_template('index.html')
 
+@app.route('/resume')
+def resume():
+    return render_template('resume.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+@app.route('/p_privacy')
+def privacy():
+    return render_template('p_privacy.html')
+
+@app.route('/useterms')
+def useterms():
+    return render_template('useterms.html')
+
 
 
 if __name__ == "__main__":    
