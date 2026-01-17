@@ -120,7 +120,7 @@
                     </div>
                 </div>                          
                 <div id="link-social-media" class="row p-0">
-                    <div id="download-cv" class="col-sm-4 download-cv" data-anime="left">
+                    <div id="download-cv" class="row-sm-4 download-cv" data-anime="left">
                         <!-- <a href="{{ url_for('static', filename='downloads/cv_amiraldo_rodrigues.pdf') }}" target="_blank" class="link" type="submit"> -->
                         <a href="../static/downloads/cv_amiraldo_rodrigues.pdf" target="_blank" class="link" type="submit">
                             <span id="dcv" class="link__text">
@@ -128,7 +128,7 @@
                             </span>
                         </a> 
                     </div>
-                    <div id="links-job" class="col-md-8" data-anime="right">
+                    <div id="links-job" class="row-md-8" data-anime="right">
                         <ul class="nav">                            
                             <li class="nav-item">
                                 <a id="git" href="https://github.com/mrld-rodrigues" target="_blank"><i class="bi bi-github"></i></a>
@@ -333,52 +333,61 @@
         </section>
         <!--timeline-section-->
 
-        <!--services-section-->
-        <section id="services-section" class="services-section">
-            <h1 class="text-shadow">SERV<span>ICES</span></h1>
-            <span id="subtitle3" class="text-shadow text-white">Alguma coisa como subtitulo</span>
-        </section>
-
-        <section id="conteudo3" class="row m-4 d-flex justify-content-center align-content-center">
+        <!--services-section-->  
+        <section id="services-section" class="row m-4 d-flex justify-content-center align-content-center">
+            <h1 class="text-shadow">SERV<span>ICES</span></h1>  
             <div data-animation="down">
-                <h2>How my skill can help you</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Quo rem impedit exercitationem esse fugit similique ex voluptatem! 
-                    Ipsum eaque necessitatibus quidem! Ad, nisi ullam non assumenda 
-                    cupiditate praesentium culpa cum?Lorem ipsum dolor sit amet 
-                    consectetur adipisicing elit. Recusandae corporis, itaque harum 
-                    sed qui minus laboriosam accusantium quidem dolorum amet voluptates 
-                    officia voluptatem! Optio quaerat, saepe modi amet consequuntur 
-                    facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatum rerum blanditiis nam suscipit quam, culpa nemo 
-                    reprehenderit aliquid dignissimos quibusdam, in nobis dolore 
-                    praesentium consequatur ab deserunt voluptates, voluptatem porro.</p>
+                <h2>Which <span>solution</span> do you need<span>?</span></h2>
+
+                <div class="service-conteiner">
+                    <div class="service-box">
+                        <div class="service-info">
+                            <i class="bi bi-code"></i>
+                            <h4>Backend Development</h4>
+                            <p>Developing robust and scalable backend systems using Python, some libs and Flask frameworks.</p>
+                        </div>
+                    </div> 
+                    <div class="service-box">
+                        <div class="service-info">
+                            <i class="bi bi-layout-text-window-reverse"></i>
+                            <h4>Frontend Development</h4>
+                            <p>Creating responsive and user-friendly interfaces using HTML, CSS, JavaScript, and Bootstrap.</p>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-info">
+                            <i class="bi bi-phone"></i>
+                            <h4>Mobile App Development</h4>
+                            <p>Building cross-platform mobile applications using Kivy and KivyMD frameworks.</p>
+                        </div>
+                    </div>                    
+                </div>
             </div>            
         </section>
         <!--services-section-->
 
         <!--contact-section-->
-        <section id="contact-section" class="row pt-5 pb-5 m-4 contact">
-            <div class="container mb-5">
-                <h2>Contact</h2>
+        <section id="contact-section" class="row pt-5 pb-1 m-4 contact">
+            <div class="container mb-1">
+                <h2><span>CONT</span>ACT</h2>
                 <div class="row">
                     <div class="col-md-5">
-                        <div class="card p-5 shadow border-0" data-animation="left">
+                        <div class="card p-3 shadow border-0" data-animation="left">
                             <div class="endereco">
                                 <h4><i class="bi bi-geo-alt"></i> Local:</h4>
-                                <p>Toronto, CA</p>
+                                <p>Lagos, PT</p>
                             </div>
 
                             <div class="email">
                                 <h4><i class="bi bi-envelope"></i> Email:</h4>
-                                <p>teuemail@gmail.com</p>
+                                <p>mrldrodor@gmail.com</p>
                             </div>
 
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94982.18775546656!2d-79.44285165818535!3d43.71689493951833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2zVG9yb250bywgT04sIENhbmFkw6E!5e0!3m2!1spt-PT!2spt!4v1714148500569!5m2!1spt-PT!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50905.13955858484!2d-8.760942678873255!3d37.11532294012541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b304950234d8d%3A0x5410aaa3471afc57!2sLagos!5e0!3m2!1spt-PT!2spt!4v1768431189947!5m2!1spt-PT!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
                         </div>
                     </div>
                     <div class="col-md-7 mt-5 mt-md-0">
-                        <div class="card p-5 h-100 shadow border-0" data-animation="up">
+                        <div class="card p-3 h-80 shadow border-0" data-animation="up">
 
                             <form class="row g-3" action="/send" method="POST">
                                 <div class="col-md-6">
@@ -392,31 +401,89 @@
                                 
                                 <div class="col-12">
                                   <label for="message" class="form-label"> Messages:</label>
-                                  <textarea type="text" class="form-control" id="message" rows="8" placeholder="Enter your message" name="message"></textarea>
+                                  <textarea type="text" class="form-control" id="message" rows="6" placeholder="Enter your message" name="message"></textarea>
                                 </div>
 
                               
-                                <div class="col-12 d-flex justify-content-center mt-4">
-                                  <button type="submit" class="btn btn-outline-warning">Send message</button>
+                                 <!-- Widget do reCAPTCHA -->
+                                <div class="col-12 d-flex mt-4">
+                                    <div class="g-recaptcha" data-sitekey="6LftWl0rAAAAAIjeTXLUNRSIqk08L9G-Cr2gV7e0"></div>
+                                </div>
+    
+                                
+                                <div class="col-12 d-flex justify-content-center mt-1">
+                                    <button id="btn-send" type="submit" class="btn btn-outline-dark custom-btn">Send message</button>
+                                    <button id="btn-send-loader" class="btn btn-primary custom-btn" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                                        <span role="status">Sending...</span>
+                                    </button>
                                 </div>
                               </form>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-
+            </div> 
         </section>
-        <!--contact-section-->  
-
+        <!--contact-section--> 
     </main>
     <!--main-->
 
 
+    <!-- <div class="position-fixed w-30 alerta">
+        {% with messages = get_flashed_messages(with_categories=True) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        <i class="bi bi-check-circle-fill"></i> {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>  -->
+
+
+    <!-- Footer -->
+     <footer id="footer">        
+        <!-- <img id="image-footer" src="{{ url_for('static', filename='images/amiraldo_logo_transparent_white.png') }}" alt="footerlogo"> -->
+        <img id="image-footer" src="../static/images/amiraldo_logo_transparent_white.png" alt="footerlogo">
+        <div>
+            <p>&copy; 2026 Amiraldo Rodrigues. Todos os direitos reservados.</p>            
+            <ul class="footer-links">
+                <!-- <li><a href="{{ url_for('privacy') }}" target="_blank">Política de Privacidade</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="{{ url_for('useterms') }}" target="_blank">Termos de Uso</a></li> -->
+                <li><a href="p_privacy.html" target="_blank">Política de Privacidade</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="useterms.html" target="_blank">Termos de Uso</a></li>
+            </ul>
+        </div>
+               
+    </footer>
+
+
 
     <!-- Scripts JS -->
+
+     <!-- Tirar o warning depois de 5 segundos POR ALGUM MOTIVO NAO FUNCIONOU NO .JS -->
+    <script>
+        window.addEventListener('load', function() {
+            const alerts = document.querySelectorAll('.alert');
+            if (alerts.length > 0) {
+                alerts.forEach(alert => {
+                    setTimeout(() => {
+                        alert.classList.add('fade-out');  
+                        setTimeout(() => {
+                            alert.remove();  
+                        }, 2000); 
+                    }, 3000); 
+                });
+            }
+        });        
+    </script>   
+
+
     <script defer src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script defer src="../static/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 </html>

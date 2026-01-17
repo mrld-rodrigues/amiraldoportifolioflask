@@ -38,6 +38,19 @@ def privacy():
 def useterms():
     return render_template('useterms.html')
 
+@app.route('/send', methods=['POST'])
+def send():
+    if request.method == 'POST':
+        nome = request.form['name']
+        email = request.form['email']
+        mensagem = request.form['message']        
+        contato = Contato(nome, email, mensagem)        
+        try:
+            send_email(contato)
+            flash('Mensagem enviada com sucesso!')
+        except Exception as e:
+            flash(f'Erro ao enviar mensagem: {str(e)}')
+    return redirect('/')
 
 
 if __name__ == "__main__":    
